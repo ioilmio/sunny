@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=((e,n,t,i)=>{const a=document.createElement("div");return a.id="main",a.className+=" main",a.textContent="main",a})();document.body.appendChild(e),e.innerHTML="hello",e()})();
