@@ -1,3 +1,8 @@
-import Dom from './Dom';
+import './style.min.css';
+import dom from './dom';
+import weather from './weather';
+// import event from './event';
 
-Dom();
+dom();
+weather();
+// event();
