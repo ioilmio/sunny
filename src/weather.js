@@ -1,8 +1,10 @@
 import iconImg from './icon';
+import config from './config';
 
 export default async function getWeather(city) {
-  const API_KEY = '975ebbfa721d8a8a939f0e408d671547';
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`;
+  // const API_KEY = '975ebbfa721d8a8a939f0e408d671547';
+  const key = config.API_KEY;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${key}`;
 
   await fetch(url)
     .then(response => response.json())
@@ -15,13 +17,10 @@ export default async function getWeather(city) {
       temperature.textContent = `${Math.floor(data.main.temp)}`;
 
       const description = document.getElementById('description');
-      description.textContent = `${data.weather[0].description}`;
+      description.textContent = `${data.weather[0].description.toUpperCase()}`;
 
       const icon = document.getElementById('weatherIcon');
       icon.src = `${iconImg(data.weather[0].icon)}`;
-
-      const { temp } = data.main.temp;
-      return temp;
     }).catch(err => {
       console.error(err);
       const notification = document.getElementById('notificationBox');

@@ -1,4 +1,5 @@
 import getWeather from './weather';
+import getCityImage from './city';
 
 export default function search() {
   const searchBtn = document.getElementById('searchBtn');
@@ -6,5 +7,6 @@ export default function search() {
     e.preventDefault();
     const input = document.getElementById('searchBox').value;
     getWeather(input);
+    getCityImage(input);
   });
 }

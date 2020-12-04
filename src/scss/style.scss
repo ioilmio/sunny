@@ -1,21 +1,27 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: monospace, sans-serif;
 }
 
-body{
+body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-position: center;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: blue;
-  font-size: 1em;
+  color: rgb(11, 11, 24);
+  font-size: 2em;
+  padding: 2em;
+  border-radius: 10px;
+  margin-top: 2em;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 #temperatureBox {
@@ -24,4 +30,24 @@ body{
 
 #notificationBox {
   display: none;
+}
+
+#searchBox {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+#searchBtn {
+  border:none;
+  outline: none;
+  background-color: transparent;
+  margin-left: 1rem;
+  transition: background-color 0.1s ease-in-out
+
+}
+
+#searchBtn:hover {
+  background-color: orange;
 }
