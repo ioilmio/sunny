@@ -1,6 +1,4 @@
-// import weather from './weather';
-
-const icon = 'http://openweathermap.org/img/wn/10d@2x.png';
-// console.log(icon);
-
-export { icon as default };
+export default function iconImg(code) {
+  const icon = `http://openweathermap.org/img/wn/${code}@2x.png`;
+  return icon;
+}

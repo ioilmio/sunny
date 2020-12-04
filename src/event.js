@@ -1,18 +1,26 @@
-import dom from './dom';
-import convertTemperature from './convert';
-import weather from './weather';
+import { convertToCelsius, convertToFahrenheit } from './convert';
+// import getWeather from './weather';
 
-const click = dom.temperatureBox.addEventListener('click', () => {
-  if (weather.temperature.value === undefined) return;
-  if (weather.temperature.unit === 'celsius') {
-    let fahrenheit = convertTemperature(weather.temperature.value);
-    fahrenheit = Math.floor(fahrenheit);
-    dom.temperatureBox.textContent = `${fahrenheit}°F`;
-    weather.temperature.unit = 'fahrenheit';
-  } else {
-    dom.temperatureBox.textContent = `${weather.temperature.value}°C`;
-    weather.temperature.unit = 'celsius';
-  }
-});
+export default async function convert() {
+  const temperatureBox = document.getElementById('temperatureBox');
 
-export { click as default };
+  temperatureBox.addEventListener('click', () => {
+    const temp = document.querySelector('#temperature');
+    const scale = document.querySelector('#scale');
+    console.log(temp.textContent);
+
+    if (temp === undefined) return;
+    if (scale.textContent === 'C') {
+      let fahrenheit = convertToFahrenheit(temp.textContent);
+      fahrenheit = Math.floor(fahrenheit);
+      temp.textContent = `${fahrenheit}`;
+      scale.textContent = 'F';
+    }
+    if (scale.textContent === 'F') {
+      let celsius = convertToCelsius(temp.textContent);
+      celsius = Math.floor(celsius);
+      temp.textContent = `${celsius}`;
+      scale.textContent = 'C';
+    }
+  });
+}

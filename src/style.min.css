@@ -1,1 +1,1 @@
-*{margin:0;padding:0;box-sizing:border-box}body{display:flex;justify-content:center;align-items:center}.container{display:flex;flex-direction:column;text-align:center;color:blue;font-size:1em}
+*{margin:0;padding:0;box-sizing:border-box}body{display:flex;justify-content:center;align-items:center}.container{display:flex;flex-direction:column;text-align:center;color:blue;font-size:1em}#temperatureBox{cursor:pointer}#notificationBox{display:none}

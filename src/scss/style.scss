@@ -17,3 +17,11 @@ body{
   color: blue;
   font-size: 1em;
 }
+
+#temperatureBox {
+  cursor: pointer;
+}
+
+#notificationBox {
+  display: none;
+}
