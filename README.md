@@ -2,7 +2,7 @@
 
 Weather app consuming Open Weather API
 
-# Project Restaurant Page
+# Project Weather APP
 
 <br />
 <p align="center">
@@ -11,7 +11,7 @@ Weather app consuming Open Weather API
   </a>
 
   <p align="center">
-    This is the First Project of the Microverse JavaScript curriculum!
+    This is the Second Project of the Microverse JavaScript curriculum!
     <br />
     <a href="https://github.com/ioilmio/sunny"><strong>Explore the docs »</strong></a>
     <br />
@@ -31,10 +31,13 @@ Weather app consuming Open Weather API
 - [Acknowledgements](#acknowledgements)
 
 ## About The Project
+### This is a weather web app, is consuming OpenWeatherMap API to get weather city's info and Pexels API for the background image  
 
-### This is a page for a fictional restaurant, and is intended as MVP;
-### This is a weather web app is consuming OpenWeatherMap API to get weather city's info and Pexels API for the background image  
 
+
+![image](https://user-images.githubusercontent.com/51195150/101218513-7b2b8f00-3683-11eb-8fee-8e4ae1d8069d.png)
+
+![image](https://user-images.githubusercontent.com/51195150/101218591-a2825c00-3683-11eb-857f-47799fe65ee8.png)
 ### Built With
 
 This project was built using these technologies.
@@ -58,10 +61,15 @@ Type in your temrinal:
 - to build the project suing webpack `npm run build`
 - to run the dev server `npm start`
 
-1. open a browser and go to `localhost:8080`
-2. click the top bar to navigate the pages
+Go to [Open Weather](https://openweathermap.org/api) and subscribe for an API key, and substitute it in the `weather.js` file;
 
-3. Click the link in the nav to navigate between pages;
+Go to [Pexels](https://www.pexels.com/api/) and subscribe for an API key, and substitute it in the `city.js` file;
+
+
+1. open a browser and go to `localhost:8080`
+2. type a city in the input field and click search to get weather info;
+3. Click on the degrees to change Celsius to Fahreneit and viceversa;
+
 
 ## Author
 
