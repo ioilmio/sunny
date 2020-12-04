@@ -50,7 +50,7 @@ This project was built using these technologies.
 
 ## Live version
 
-[Click here](https://rawcdn.githack.com/ioilmio/sunny/6bca44a8d36531cad72764701ed1eb2b75ab90c7/dist/index.html)
+[Click here](https://rawcdn.githack.com/ioilmio/sunny/0bdeddf9ef2ceea32dbc5d8048ac80e0a9c45620/dist/index.html)
 
 ### Usage
 
