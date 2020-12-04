@@ -33,6 +33,7 @@ Weather app consuming Open Weather API
 ## About The Project
 
 ### This is a page for a fictional restaurant, and is intended as MVP;
+### This is a weather web app is consuming OpenWeatherMap API to get weather city's info and Pexels API for the background image  
 
 ### Built With
 
@@ -46,7 +47,7 @@ This project was built using these technologies.
 
 ## Live version
 
-[Click here](https://rawcdn.githack.com/ioilmio/sunny/170c0e09a84dad792c46d4cc232e14ba9931966e/dist/index.html)
+[Click here](https://rawcdn.githack.com/ioilmio/sunny/6bca44a8d36531cad72764701ed1eb2b75ab90c7/dist/index.html)
 
 ### Usage
 
