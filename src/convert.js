@@ -3,5 +3,5 @@ export function convertToFahrenheit(temp) {
 }
 
 export function convertToCelsius(temp) {
-  return ((temp) * (5 / 9) - 32);
+  return ((temp - 32) * 5 / 9);
 }

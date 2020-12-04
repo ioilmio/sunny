@@ -1,7 +1,7 @@
 import { convertToCelsius, convertToFahrenheit } from './convert';
 // import getWeather from './weather';
 
-export default async function convert() {
+export default function convert() {
   const temperatureBox = document.getElementById('temperatureBox');
 
   temperatureBox.addEventListener('click', () => {
@@ -15,8 +15,7 @@ export default async function convert() {
       fahrenheit = Math.floor(fahrenheit);
       temp.textContent = `${fahrenheit}`;
       scale.textContent = 'F';
-    }
-    if (scale.textContent === 'F') {
+    } else {
       let celsius = convertToCelsius(temp.textContent);
       celsius = Math.floor(celsius);
       temp.textContent = `${celsius}`;
