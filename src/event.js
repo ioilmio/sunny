@@ -1,5 +1,4 @@
 import { convertToCelsius, convertToFahrenheit } from './convert';
-// import getWeather from './weather';
 
 export default function convert() {
   const temperatureBox = document.getElementById('temperatureBox');
@@ -7,7 +6,6 @@ export default function convert() {
   temperatureBox.addEventListener('click', () => {
     const temp = document.querySelector('#temperature');
     const scale = document.querySelector('#scale');
-    console.log(temp.textContent);
 
     if (temp === undefined) return;
     if (scale.textContent === 'C') {

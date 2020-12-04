@@ -40,12 +40,11 @@ body {
 }
 
 #searchBtn {
-  border:none;
+  border: none;
   outline: none;
   background-color: transparent;
   margin-left: 1rem;
-  transition: background-color 0.1s ease-in-out
-
+  transition: background-color 0.1s ease-in-out;
 }
 
 #searchBtn:hover {
