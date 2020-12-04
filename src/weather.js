@@ -20,11 +20,13 @@ export default async function getWeather(city) {
       const icon = document.getElementById('weatherIcon');
       icon.src = `${iconImg(data.weather[0].icon)}`;
     }).catch(err => {
-      console.error(err);
       const notification = document.getElementById('notificationBox');
       const box = document.getElementById('weatherContainer');
       notification.style.display = 'block';
       box.style.display = 'none';
-      notification.textContent = 'Can\'t get weather data';
+      notification.textContent = `
+        ${err}
+
+        Can't get weather data`;
     });
 }
