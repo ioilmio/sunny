@@ -1,8 +1,8 @@
-// eslint-disable import/extensions
-// eslint-disable import/no-unresolved
-
-import iconImg from './icon';
+// eslint-disable-next-line import/extensions
+// eslint-disable-next-line import/no-unresolved
 import config from './config';
+import iconImg from './icon';
+
 
 export default async function getWeather(city) {
   const key = config.API_KEY;
