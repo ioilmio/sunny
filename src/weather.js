@@ -1,3 +1,6 @@
+// eslint-disable-next-line import/extensions
+// eslint-disable-next-line import/no-unresolved
+
 import iconImg from './icon';
 import config from './config';
 
