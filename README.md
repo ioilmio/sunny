@@ -69,6 +69,8 @@ Go to [Pexels](https://www.pexels.com/api/) and subscribe for an API key, and su
 1. open a browser and go to `localhost:8080`
 2. type a city in the input field and click search to get weather info;
 3. Click on the degrees to change Celsius to Fahreneit and viceversa;
+4. Enjoy weather info;
+
 
 
 ## Author
