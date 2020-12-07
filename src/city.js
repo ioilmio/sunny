@@ -1,5 +1,5 @@
-// eslint-disable-next-line import/extensions
-// eslint-disable-next-line import/no-unresolved
+// eslint-disable import/extensions
+// eslint-disable import/no-unresolved
 
 import config from './config';
 
