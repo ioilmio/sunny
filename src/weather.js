@@ -1,10 +1,10 @@
 // eslint-disable-next-line import/no-unresolved, import/extensions
-import config from './config';
+// import config from './config';
 import iconImg from './icon';
 
 
 export default async function getWeather(city) {
-  const key = config.API_KEY;
+  const key = process.env.API_KEY;
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${key}`;
 
   await fetch(url)

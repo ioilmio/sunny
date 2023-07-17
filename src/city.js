@@ -1,8 +1,8 @@
 // eslint-disable-next-line import/no-unresolved ,import/extensions
-import config from './config';
+// import config from './config';
 
 
-const KEY = config.PEXELS;
+const KEY = process.env.PEXELS;
 
 // All requests made with the client will be authenticated
 
