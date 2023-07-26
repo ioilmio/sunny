@@ -4,9 +4,7 @@ import config from './config';
 
 
 export default async function getCityImage(city) {
-  const NODE_ENV = process.env.NODE_ENV ?? 'development';
-  console.log(NODE_ENV);
-  const KEY = NODE_ENV === 'development' ? config.PEXELS : process.env.PEXELS;
+  const KEY = config.PEXELS;
   const url = `https://api.pexels.com/v1/search?query=${city}&page=1`;
   await fetch(url, {
     method: 'GET',
