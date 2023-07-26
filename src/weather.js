@@ -4,7 +4,7 @@ import iconImg from './icon';
 
 
 export default async function getWeather(city) {
-  const NODE_ENV = process.env.NODE_ENV || 'development';
+  const NODE_ENV = process.env.NODE_ENV ?? 'development';
   console.log(NODE_ENV);
   const key = NODE_ENV === 'development' ? config.API_KEY : process.env.API_KEY;
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${key}`;
