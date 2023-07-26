@@ -3,7 +3,7 @@ import htmlTag from './htmlTag';
 export default function dom() {
   const container = htmlTag('div', 'container', 'container');
   const appTitle = htmlTag('div', 'appTitle', 'app-title');
-  const notificationBox = htmlTag('div', 'notificationBox', 'notification-box', 'notification');
+  const notificationBox = htmlTag('div', 'notificationBox', 'notification-box');
   const weatherBox = htmlTag('div', 'weatherContainer', 'weather-container');
   const weatherIcon = htmlTag('img', 'weatherIcon', 'weather-icon', 'weather-icon');
   const weatherDescription = htmlTag('h3', 'description', 'weather-description');
@@ -13,6 +13,7 @@ export default function dom() {
   const degrees = htmlTag('span', 'degrees', 'degrees', '°');
   const scale = htmlTag('span', 'scale', 'scale', 'C');
   const location = htmlTag('div', 'location', 'location', 'location');
+  const form = htmlTag('form', 'form', 'form');
   const searchBox = htmlTag('input', 'searchBox', 'search-box', 'search-box');
   searchBox.placeholder = 'Type a city...';
   const searchBtn = htmlTag('button', 'searchBtn', 'search-btn', 'Search');
@@ -29,6 +30,7 @@ export default function dom() {
   temperatureBox.appendChild(degrees);
   temperatureBox.appendChild(scale);
   weatherBox.appendChild(location);
-  weatherBox.appendChild(searchBox);
-  weatherBox.appendChild(searchBtn);
+  weatherBox.appendChild(form);
+  form.appendChild(searchBox);
+  form.appendChild(searchBtn);
 }
