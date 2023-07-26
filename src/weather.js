@@ -4,7 +4,8 @@ import iconImg from './icon';
 
 
 export default async function getWeather(city) {
-  const key = process.env.API_KEY;
+  const NODE_ENV = process.env.NODE_ENV || 'development';
+  const key = NODE_ENV === 'development' ? config.API_KEY : process.env.API_KEY;
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${key}`;
 
   await fetch(url)
@@ -25,10 +26,13 @@ export default async function getWeather(city) {
       const notification = document.getElementById('notificationBox');
       const box = document.getElementById('weatherContainer');
       notification.style.display = 'block';
-      box.style.display = 'none';
+      // box.style.display = 'none';
       notification.textContent = `
         ${err}
-
         Can't get weather data`;
+      setTimeout(() => {
+        notification.textContent = '';
+        box.style.display = 'block';
+      }, 1500);
     });
 }
